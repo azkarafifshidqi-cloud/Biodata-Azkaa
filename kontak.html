@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- [GANTI] Judul tab browser -->
+    <title>Kontak | Azkarapipp</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <!-- [GANTI] Logo/nama di pojok kiri atas (ada di semua halaman) -->
+          <a class="logo" href="index.html">Azka<span>Rapip</span></a>
+          <!-- Menu HP: tombol ☰ memakai checkbox + CSS (tanpa JavaScript) -->
+          <input type="checkbox" id="burger" />
+          <label for="burger" class="burger" aria-label="Buka menu">☰</label>
+          <ul class="menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="pendidikan.html">Pendidikan</a></li>
+            <li><a href="fotoo.html">Galeri</a></li>
+            <li><a class="active" href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="page-title">
+      <div class="wrap">
+        <!-- [GANTI] Judul halaman -->
+        <h1>Hubungi saya</h1>
+        <!-- [GANTI] Subjudul -->
+        <p>Terbuka untuk kolaborasi, diskusi, dan teman belajar baru.</p>
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="wrap grid">
+          <div>
+            <h2>Info kontak</h2>
+            <!-- [GANTI] Email, WhatsApp (format 62xxx tanpa +), Instagram, LinkedIn, GitHub, lokasi -->
+            <p>
+              Email:
+              <a href="azkarafifshidqi@gmail.com">azkarafifshidqi@gmail.com</a>
+            </p>
+            <p>
+              WhatsApp:
+              <a href="https://wa.me/6281359525144">+62 813-5952-5144</a>
+            </p>
+            <p>
+              Instagram:
+              <a href="https://instagram.com/azkarapipp">@azkarapipp</a>
+            </p>
+            <p>Lokasi:</p>
+            <ul style="list-style-type: &quot;- &quot;">
+              <li>Surabaya Timur, Jawa Timur</li>
+              <li>Blora, Jawa Tngah</li>
+            </ul>
+          </div>
+          <!-- [GANTI] Email tujuan pada action="mailto:..." (form membuka aplikasi email) -->
+          <form
+            action="mailto:azkarafifshidqi@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <h2>Kirim pesan</h2>
+            <input name="nama" placeholder="Nama kamu" required />
+            <input
+              name="email"
+              type="email"
+              placeholder="Email kamu"
+              required
+            />
+            <textarea
+              name="pesan"
+              rows="5"
+              placeholder="Tulis pesan..."
+              required
+            ></textarea>
+            <button class="btn" type="submit">Kirim pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- [GANTI] Teks footer -->© 2026
+      <!-- [GANTI] Tahun -->
+      Azkarapipp — Mahasiswa PENS
+    </footer>
+  </body>
+</html>
